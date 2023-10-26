@@ -1,17 +1,18 @@
 package ua.edu.ucu.apps.flowerstore.flowers.decorations;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import ua.edu.ucu.apps.flowerstore.order.Item;
 
-@Getter
+@Getter @AllArgsConstructor
 public class PaperDecorator {
-    public Item item;
+    private Item item;
 
-    public double getPrice(){
-        return 13 + item.price();
+    public double getPrice() {
+        return 13.0 + item.price();
     }
 
-    String getDescription(){
+    String getDescription() {
         return this.getClass().getSimpleName() + ":" + getPrice();
     }
 }

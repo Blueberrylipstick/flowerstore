@@ -13,7 +13,7 @@ import ua.edu.ucu.apps.flowerstore.flowers.FlowerColor;
 @RequestMapping("api/flowers")
 public class FlowerController {
     @GetMapping("/list")
-	public List<Flower> getFlowers(){
-		return List.of(new Flower(12.5, FlowerColor.RED, 20));
+    public List<Flower> getFlowers() {
+		return List.of(new Flower(12.3, FlowerColor.RED, 21));
 	}
 }

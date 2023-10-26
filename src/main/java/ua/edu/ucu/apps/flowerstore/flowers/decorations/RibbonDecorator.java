@@ -8,11 +8,11 @@ import ua.edu.ucu.apps.flowerstore.order.Item;
 public class RibbonDecorator {
     private Item item;
 
-    public double getPrice(){
-        return 40 + item.price();
+    public double getPrice() {
+        return 40.0 + item.price();
     }
 
-    String getDescription(){
+    String getDescription() {
         return this.getClass().getSimpleName() + ":" + getPrice();
     }
 }

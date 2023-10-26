@@ -13,14 +13,14 @@ public class PaymentTest {
     @Test
     public void testPay() {
         // Create an instance of CreditCardPaymentStrategy
-        CreditCardPaymentStrategy paymentStrategy1 = new CreditCardPaymentStrategy();
-        PayPalPaymentStrategy  paymentStrategy2 = new PayPalPaymentStrategy();
+        CreditCardPaymentStrategy PaymentStrategy1 = new CreditCardPaymentStrategy();
+        PayPalPaymentStrategy  PaymentStrategy = new PayPalPaymentStrategy();
 
-        Assertions.assertTrue(paymentStrategy1 instanceof CreditCardPaymentStrategy);
-        Assertions.assertTrue(paymentStrategy1 instanceof Payment);
+        Assertions.assertTrue(PaymentStrategy1 instanceof CreditCardPaymentStrategy);
+        Assertions.assertTrue(PaymentStrategy1 instanceof Payment);
 
-        Assertions.assertTrue(paymentStrategy2 instanceof PayPalPaymentStrategy);
-        Assertions.assertTrue(paymentStrategy2 instanceof Payment);
+        Assertions.assertTrue(PaymentStrategy instanceof PayPalPaymentStrategy);
+        Assertions.assertTrue(PaymentStrategy instanceof Payment);
 
     }
 }

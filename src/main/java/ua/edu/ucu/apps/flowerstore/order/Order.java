@@ -14,12 +14,12 @@ public class Order {
     private Payment payment;
     private Delivery delivery;
 
-    public void setPaymentStrategy(Payment payment) {
-        this.payment = payment;
+    public void setPaymentStrategy(Payment paymentt) {
+        this.payment = paymentt;
     }
 
-    public void setDeliveryStrategy(Delivery delivery) {
-        this.delivery = delivery;
+    public void setDeliveryStrategy(Delivery deliverry) {
+        this.delivery = deliverry;
     }
 
     public void addItem(Item item) {
