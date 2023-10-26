@@ -14,6 +14,6 @@ import ua.edu.ucu.apps.flowerstore.flowers.FlowerColor;
 public class FlowerController {
     @GetMapping("/list")
     public List<Flower> getFlowers() {
-		return List.of(new Flower(12.3, FlowerColor.RED, 21));
+        return List.of(new Flower(12.3, FlowerColor.RED, 21));
 	}
 }
