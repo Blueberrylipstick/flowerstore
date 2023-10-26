@@ -15,14 +15,14 @@ public class DeliveryTest {
     @Test
     public void testPay() {
         // Create an instance of CreditCardPaymentStrategy
-        DHLDeliveryStrategy DeliveryStrategy1 = new DHLDeliveryStrategy();
-        PostDeliveryStrategy DeliveryStrategy = new PostDeliveryStrategy();
+        DHLDeliveryStrategy deliveryStrateggy = new DHLDeliveryStrategy();
+        PostDeliveryStrategy deliveryStrategy = new PostDeliveryStrategy();
 
-        Assertions.assertTrue(DeliveryStrategy1 instanceof DHLDeliveryStrategy);
-        Assertions.assertTrue(DeliveryStrategy1 instanceof Delivery);
+        Assertions.assertTrue(deliveryStrateggy instanceof DHLDeliveryStrategy);
+        Assertions.assertTrue(deliveryStrateggy instanceof Delivery);
 
-        Assertions.assertTrue(DeliveryStrategy instanceof PostDeliveryStrategy);
-        Assertions.assertTrue(DeliveryStrategy instanceof Delivery);
+        Assertions.assertTrue(deliveryStrategy instanceof PostDeliveryStrategy);
+        Assertions.assertTrue(deliveryStrategy instanceof Delivery);
 
     }
 }

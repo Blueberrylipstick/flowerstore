@@ -7,9 +7,10 @@ import ua.edu.ucu.apps.flowerstore.order.Item;
 @Getter @AllArgsConstructor
 public class RibbonDecorator {
     private Item item;
+    private int addition = 40;
 
     public double getPrice() {
-        return 40.0 + item.price();
+        return addition + item.price();
     }
 
     String getDescription() {

@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.flowerstore.order;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket extends Item{
+public class FlowerBucket extends Item {
     private List<FlowerPack> flowerPacks = new ArrayList<>();
 
     public double price() {
@@ -18,14 +18,17 @@ public class FlowerBucket extends Item{
         flowerPacks.add(pack);
     }
 
-    public void searchFlowers(){
+    public void searchFlowers() {
 
     }
 
     @Override
     public String getDescription() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDescription'");
+        String res = "";
+        for (FlowerPack pack: flowerPacks) {
+            res += pack.getFlower().getClass().getSimpleName();
+        }
+        return "Such flowers in bucket: " + res + "\ntotal price – " + price();
     }
 
 }
