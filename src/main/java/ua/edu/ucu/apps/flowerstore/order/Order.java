@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.flowerstore.order;
 
-import java.util.List;
+import java.util.LinkedList;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,7 +10,7 @@ import ua.edu.ucu.apps.flowerstore.payment.Payment;
 
 @Getter @Setter @AllArgsConstructor
 public class Order {
-    private List<Item> itemsList;
+    private LinkedList<Item> itemsList;
     private Payment payment;
     private Delivery delivery;
 
