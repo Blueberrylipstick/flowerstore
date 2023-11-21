@@ -28,7 +28,7 @@ public class FlowerBucket extends Item {
         for (FlowerPack pack: flowerPacks) {
             res += pack.getFlower().getClass().getSimpleName();
         }
-        return "Such flowers in bucket: " + res + "\ntotal price – " + getPrice();
+        return "Such flowers in bucket: " +res +"\ntotal price – " + getPrice();
     }
 
 }
