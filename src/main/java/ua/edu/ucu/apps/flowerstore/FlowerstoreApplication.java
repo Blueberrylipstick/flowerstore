@@ -10,6 +10,6 @@ public class FlowerstoreApplication {
 
    public static void main(String[] args) {
       SpringApplication.run(FlowerstoreApplication.class, args);
-    }	
+     }	
 
 }
