@@ -1,7 +1,7 @@
 package ua.edu.ucu.apps.flowerstore.order;
 
-public abstract class Item {
+public abstract class Item{
     private String description;
-    public abstract double price();
+    public abstract double getPrice();
     public abstract String getDescription();
 }

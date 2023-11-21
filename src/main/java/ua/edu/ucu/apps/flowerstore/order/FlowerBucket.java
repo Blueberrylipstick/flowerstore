@@ -6,7 +6,7 @@ import java.util.List;
 public class FlowerBucket extends Item {
     private List<FlowerPack> flowerPacks = new ArrayList<>();
 
-    public double price() {
+    public double getPrice() {
         double price = 0;
         for (FlowerPack flowerPack: flowerPacks) {
             price += flowerPack.getPrice();
@@ -28,7 +28,7 @@ public class FlowerBucket extends Item {
         for (FlowerPack pack: flowerPacks) {
             res += pack.getFlower().getClass().getSimpleName();
         }
-        return "Such flowers in bucket: " + res + "\ntotal price – " + price();
+        return "Such flowers in bucket: " + res + "\ntotal price – " + getPrice();
     }
 
 }

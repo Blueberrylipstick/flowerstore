@@ -6,13 +6,13 @@ public class RomashkaFlower extends Item {
     private double priceOne;
 
     @Override
-    public double price() {
+    public double getPrice() {
         return priceOne;  
     }
 
     @Override
     public String getDescription() {
-        return this.getClass().getSimpleName() + ":" + price();
+        return this.getClass().getSimpleName() + ":" + getPrice();
     }
     
 }

@@ -10,10 +10,10 @@ import ua.edu.ucu.apps.flowerstore.flowers.FlowerRepository;
 
 @Service
 public class FlowerService {
-    public FlowerRepository flowerRepository;
+    private FlowerRepository flowerRepository;
 
     @Autowired
-    public FlowerService(FlowerRepository flowerRepository){
+    public FlowerService(FlowerRepository flowerRepository) {
         this.flowerRepository = flowerRepository;
     }
 

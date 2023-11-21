@@ -4,17 +4,22 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import ua.edu.ucu.apps.flowerstore.order.Item;
 
-@Getter @AllArgsConstructor
-public class PaperDecorator {
+@Getter 
+public class PaperDecorator extends ItemDecorator{
+    public PaperDecorator(Item item) {
+        super(item);
+        //TODO Auto-generated constructor stub
+    }
+
     private Item item;
-    private int addition = 13;
+    private int addition = Integer.valueOf("13");
 
 
     public double getPrice() {
-        return addition + item.price();
+        return super.getPrice() + addition;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return this.getClass().getSimpleName() + ":" + getPrice();
     }
 }

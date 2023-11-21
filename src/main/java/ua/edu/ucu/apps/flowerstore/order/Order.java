@@ -33,7 +33,7 @@ public class Order {
     public double calculateTotalPrice() {
         double total = 0.0;
         for (Item bucket : itemsList) {
-            total += bucket.price();
+            total += bucket.getPrice();
         }
         return total;
     }

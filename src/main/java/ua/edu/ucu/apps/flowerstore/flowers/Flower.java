@@ -1,7 +1,5 @@
 package ua.edu.ucu.apps.flowerstore.flowers;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;

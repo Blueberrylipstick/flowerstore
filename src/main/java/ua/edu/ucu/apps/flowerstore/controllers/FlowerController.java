@@ -23,12 +23,13 @@ public class FlowerController {
     }
 
     @GetMapping("/list")
-    public List<Flower> getFlowers(){
+    public List<Flower> getFlowers() {
         return flowerService.getFlowers();
     }
     
     @PostMapping("/add")
-    public void addFlower(@RequestBody Flower flower){
+    public void addFlower(@RequestBody Flower flower) {
         flowerService.add(flower);
     }
 }
+
